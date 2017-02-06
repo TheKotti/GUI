@@ -1,0 +1,18 @@
+﻿<Window x:Class="Markkalaskuri.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Markkalaskuri"
+        mc:Ignorable="d"
+        Title="Markkalaskuri" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="button" Content="--&gt;" HorizontalAlignment="Left" Margin="217,122,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="129,83,0,0" TextWrapping="Wrap" Text="Eurot" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="349,86,0,0" TextWrapping="Wrap" Text="Markat" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="61" Margin="73,104,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="139" TextAlignment="Center" FontSize="36"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="61" Margin="297,104,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="139" FontSize="36" TextAlignment="Center"/>
+        <Button x:Name="button1" Content="Muunna" HorizontalAlignment="Left" Margin="217,161,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+
+    </Grid>
+</Window>

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFHello", "WpfApplication1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autolaskuri", "Autolaskuri\Autolaskuri.csproj", "{AD75B4C7-70E5-4F4E-A4CF-EB723DA22F7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markkalaskuri", "Markkalaskuri\Markkalaskuri.csproj", "{4286E36E-717A-445E-A814-FF5BC4B12527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikkunalaskuri", "Ikkunalaskuri\Ikkunalaskuri.csproj", "{7DF1D741-5FDF-448D-833F-E3606F801582}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{AD75B4C7-70E5-4F4E-A4CF-EB723DA22F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD75B4C7-70E5-4F4E-A4CF-EB723DA22F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD75B4C7-70E5-4F4E-A4CF-EB723DA22F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4286E36E-717A-445E-A814-FF5BC4B12527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4286E36E-717A-445E-A814-FF5BC4B12527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4286E36E-717A-445E-A814-FF5BC4B12527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4286E36E-717A-445E-A814-FF5BC4B12527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF1D741-5FDF-448D-833F-E3606F801582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF1D741-5FDF-448D-833F-E3606F801582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF1D741-5FDF-448D-833F-E3606F801582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF1D741-5FDF-448D-833F-E3606F801582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,30 +13,27 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Autolaskuri
+namespace Ikkunalaskuri
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int auto = 0, rekka = 0;
         public MainWindow()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            rekka++;
-            textBox1.Text = rekka.ToString();
-        }
-
+        private double leveys, korkeus, karmi;
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            auto++;
-            textBox.Text = auto.ToString();
-        }
+            double.TryParse(textBox.Text, out korkeus);
+            double.TryParse(textBox_Copy.Text, out leveys);
+            double.TryParse(textBox_Copy1.Text, out karmi);
 
+            textBlock_Copy5.Text = (((korkeus + karmi) * (leveys + karmi))/100).ToString("0.00") + " cm^2";
+            textBlock_Copy6.Text = ((korkeus * leveys)/100).ToString("0.00") + " cm^2";
+            textBlock_Copy7.Text = ((korkeus + leveys) * 2 + karmi * 4).ToString("0.00") + " mm";
+        }
     }
 }
