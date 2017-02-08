@@ -29,10 +29,12 @@ namespace WpfApplication1
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            textBlock.Text = "Hello " + textBox.Text;
-            //MessageBox.Show("Terve " + textBox.Text, "AAAASDASD otsikko");
+            txbHello.Text = "Hello " + txtName.Text;
+            //MessageBox.Show("Terve " + txbHello.Text, "AAAASDASD otsikko");
             counter++;
-            textBlock_Copy.Text = counter.ToString();
+            txbCounter.Text = counter.ToString();
+            //ilmoitus tilariville
+            txbMessages.Text = "Painoit nappia " + btnSayHello;
             
         }
 

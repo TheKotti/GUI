@@ -44,12 +44,12 @@ namespace Markkalaskuri
         {
             if (button.Content.ToString() == "-->")
             {
-                double.TryParse(textBox.Text.Replace(",", "."), out muunnos);
+                double.TryParse(textBox.Text, out muunnos);
                 textBox1.Text = (markanarvo*muunnos).ToString("0.00");
             }
             else
             {
-                double.TryParse(textBox1.Text.Replace(",", "."), out muunnos);
+                double.TryParse(textBox1.Text, out muunnos);
                 textBox.Text = (muunnos / markanarvo).ToString("0.00");
             }
         }
