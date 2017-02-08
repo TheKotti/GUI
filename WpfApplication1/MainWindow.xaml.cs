@@ -34,7 +34,7 @@ namespace WpfApplication1
             counter++;
             txbCounter.Text = counter.ToString();
             //ilmoitus tilariville
-            txbMessages.Text = "Painoit nappia " + btnSayHello;
+            txbMessages.Text = "Painoit nappia " + btnSayHello.Name;
             
         }
 
