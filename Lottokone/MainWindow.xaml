@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lottokone"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="380" Width="300">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF13F7E3">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -23,12 +23,14 @@
         <ComboBox x:Name="cmbName" Grid.Row="0" Grid.Column="1" Height="20" Margin="5" Width="80" SelectedIndex="0">
             <ComboBoxItem Content="Lotto"/>
             <ComboBoxItem Content="Viking Lotto"/>
-            <ComboBoxItem Content="EuroJackPot"/>
+            <ComboBoxItem Content="Eurojackpot"/>
         </ComboBox>
         <TextBox x:Name="txtDraws" Grid.Row="1" Grid.Column="1" Height="20" Margin="5" Width="80"/>
-        <Button x:Name="btnClear" Content="Clear"  Grid.Row="2" Grid.Column="0" Height="20" Margin="5"/>
+        <Button x:Name="btnClear" Content="Clear"  Grid.Row="2" Grid.Column="0" Height="20" Margin="5" Click="btnClear_Click"/>
         <Button x:Name="btnDraw" Content="Draw"  Grid.Row="2" Grid.Column="1" Height="20" Margin="5,5,0,5" HorizontalAlignment="Left" Width="80" Click="btnDraw_Click"/>
         <TextBlock x:Name="txbChooseGame" Text="Random numbers:" Grid.Row="3" Grid.Column="0" Height="20" Margin="5"/>
-        <TextBlock x:Name="txbNumbers" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" ScrollViewer.CanContentScroll="True" />
+        <ScrollViewer Height="200" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="txbNumbers" />
+        </ScrollViewer>
     </Grid>
 </Window>
