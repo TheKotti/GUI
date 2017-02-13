@@ -1,0 +1,61 @@
+﻿<Window x:Class="WPFDataBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDataBindingDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" SizeToContent="Width">
+    
+    <Window.Resources>
+        <sys:String x:Key="MyAppName">Mahtisovellus v0.001</sys:String>
+        <x:Array x:Key="myBands" Type="sys:String">
+            <sys:String>At the Gates</sys:String>
+            <sys:String>DTP</sys:String>
+            <sys:String>YUP</sys:String>
+            <sys:String>Anal Thunder</sys:String>
+        </x:Array>
+    </Window.Resources>
+    
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <StackPanel x:Name="spLeft" Background="LimeGreen">
+                <TextBlock x:Name="txbHeader1" Text="Binding to element"/>
+                <TextBox x:Name="txtTouchMe" Text="Touch Me!"/>
+                <TextBlock x:Name="txbTouchMe" Text="{Binding ElementName=txtTouchMe, Path=Text}" />
+                <TextBlock x:Name="txbNumber" Text="{Binding ElementName=txtTouchMe, Path=Text.Length}"/>
+            </StackPanel>
+        
+            <StackPanel x:Name="spMiddle" Background="{Binding ElementName=cmbColors, Path=SelectedItem.Content, Mode=OneWay}">
+                <TextBlock x:Name="txbHeader2" Text="Binding to static resource"/>
+                <ComboBox x:Name="cmbColors">
+                    <ComboBoxItem Content="Azure"/>
+                    <ComboBoxItem Content="Blue"/>
+                    <ComboBoxItem Content="Green"/>
+                    <ComboBoxItem Content="Yellow"/>
+                </ComboBox>
+                <Separator Height="15" Background="Blue" BorderThickness="0" />
+                <TextBlock Text="{Binding Source={StaticResource MyAppName}}"/>
+                <TextBlock Text="ComboBox XAMLIsta"/>
+                <ComboBox x:Name="cmbBands" Width="150" ItemsSource="{Binding Source={StaticResource myBands}}"/>
+                <TextBlock Text="ComboBox koodista"/>
+                <ComboBox x:Name="cmbMovies" Width="150" />
+                <TextBlock Text="Oliokokoelma combobox"/>
+                <ComboBox x:Name="cmbTeams" Width="150" />
+
+            </StackPanel>
+
+            <StackPanel x:Name="spRight" Background="Aquamarine">
+                <TextBlock x:Name="txbHeader3" Text="Binding to collection"/>
+                <Button x:Name="btnBind" Content="Bindaa oliokokoelmaan" Click="btnBind_Click" />
+                <TextBox x:Name="txtName" Text="{Binding Path=Name}"/>
+                <TextBox x:Name="txtCity" Text="{Binding Path=City}"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnBack" Content="Back" Click="btnBack_Click" />
+                    <Button x:Name="btnForward" Content="Forward" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
