@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBindingDemo", "WPFDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFMVVMDemo", "WPFMVVMDemo\WPFMVVMDemo.csproj", "{71A3547A-6839-4541-878F-606670C54C67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFThreadDemo", "WPFThreadDemo\WPFThreadDemo.csproj", "{6792DF30-3AC4-4EE4-A28D-D9640B6A0ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFVRTrains", "WPFVRTrains\WPFVRTrains.csproj", "{6A707A25-790F-495F-A903-E3D8871F34B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{71A3547A-6839-4541-878F-606670C54C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A3547A-6839-4541-878F-606670C54C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A3547A-6839-4541-878F-606670C54C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6792DF30-3AC4-4EE4-A28D-D9640B6A0ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6792DF30-3AC4-4EE4-A28D-D9640B6A0ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6792DF30-3AC4-4EE4-A28D-D9640B6A0ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6792DF30-3AC4-4EE4-A28D-D9640B6A0ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A707A25-790F-495F-A903-E3D8871F34B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A707A25-790F-495F-A903-E3D8871F34B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A707A25-790F-495F-A903-E3D8871F34B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A707A25-790F-495F-A903-E3D8871F34B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
